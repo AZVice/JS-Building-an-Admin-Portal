@@ -8,28 +8,31 @@
 </head>
 
 <body>
+    
    <div id="root">
         <div style = "display: flex;">
             <p>The Shinobi Initiative</p>
-            <input type="text" placeholder="">
-            <button>Submit</button>
+            <input type="text" id="shinobiQuanity">
+            <button id="shinobiButton" onclick="updateQuantity('shinobiQuantity')">Submit</button>
         </div>
         <div style = "display: flex;">
             <p>Tess the Wonder Dog</p>
-            <input type="text" placeholder="">
-            <button>Submit</button>
+            <input type="text" id="tessQuantity">
+            <button id="tessButton" onclick="updateQuantity('tessQuantity')">Submit</button>
         </div>
         <div style = "display: flex;">
             <p>The legends of Arathrae</p>
-            <input type="text" placeholder="">
-            <button>Submit</button>
+            <input type="text" id="arathraeQuantity">
+            <button id="arathraeButton" onclick="updateQuantity('arathraeQuantity')">Submit</button>
         </div>
         <div style = "display: flex;">
             <p>W∀RP</p>
-            <input type="text" placeholder="">
-            <button>Submit</button>
+            <input type="text" id="warpQuantity">
+            <button id="warpButton" onclick="updateQuantity('warpQuantity')">Submit</button>
         </div>
-   </div>
+   </div> 
+
+
     <!-- Our JavaScript Code  -->
     <script src="admin.js"></script>
 </body>
