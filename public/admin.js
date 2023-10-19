@@ -8,6 +8,22 @@ async function getBooks() {
     console.log(resultList)
 };
 
+//Updated book id-3 to the legends of Arathrae 
+async function changeTitle (){
+    let response = await fetch('http://localhost:3001/updateBook', {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            id:3,
+            title: 'The legends of Arathrae'
+        })
+    });
+    let json = await response.json();
+    console.log(json)
+}
+
 /*
 async function updateQuantity(inputId){
     const quantityInput = document.getElementById(inputId);
@@ -27,52 +43,6 @@ async function updateQuantity(inputId){
     console.log(json);
 }
 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Updated book id-3 to the legends of Arathrae  (for Testing purposes only)
-/*
-async function changeTitle (){
-    let response = await fetch('http://localhost:3001/updateBook', {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            id:3,
-            title: 'The legends of Arathrae'
-        })
-    });
-    let json = await response.json();
-    console.log(json)
-}
 */
 
 /*async function updateQuantity(title){
